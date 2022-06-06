@@ -37,8 +37,10 @@ bot.on("messageCreate", async (message) => {
             message.author.send("Erreur num enigmes pas chiffre");
         else if (num_enigme > enigmesMap.size || num_enigme < 0)    // Pour filtrer si ce n'est pas un n° valide de question
             message.author.send(`Erreur num enigmes entre 0 et ${enigmesMap.size}`);
-        else if (enigmesMap.get(num_enigme).answers.indexOf(msgTab[1]) > -1)    // Vérifie si la réponse est conforme au numéro de la question
-            message.author.send("Oui c'est ca")
+        else if (enigmesMap.get(num_enigme).answers.indexOf(msgTab[1]) > -1) { // Vérifie si la réponse est conforme au numéro de la question
+            message.author.send("Oui c'est ca");
+            message.author.send(enigmesMap.get(num_enigme).url);
+        }   
         else
             message.author.send("Mauvaise réponse :(")
     }
