@@ -12,7 +12,7 @@ bot.on("messageCreate", async (message) => {
     //console.log(message)
 
     // Start button
-    if (message.channelId === '983354993279119433' && message.author != bot.user) {
+    if (message.channelId === '983354993279119433' && message.author.id != bot.user.id) {
         const row = new MessageActionRow()
         .addComponents(
             new MessageButton()
