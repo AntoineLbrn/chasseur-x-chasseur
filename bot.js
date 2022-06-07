@@ -3,6 +3,8 @@ const { MessageActionRow, MessageButton, Intents } = require('discord.js');
 const config = require("./config.js");
 const enigmesTab = require("./enigmes");
 const insertRow = require("./insertRow.js");
+const sendCard = require("./useCase/sendCard.js");
+const sendPokedex = require("./useCase/sendPokedex.js");
 var bot = new Discord.Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.DIRECT_MESSAGES], partials: ['MESSAGE', 'CHANNEL', 'REACTION', "USER", "GUILD_MEMBER"]  });
 
 const enigmesMap = new Map(enigmesTab)
@@ -38,8 +40,9 @@ bot.on("messageCreate", async (message) => {
         else if (num_enigme > enigmesMap.size || num_enigme < 0)    // Pour filtrer si ce n'est pas un n° valide de question
             message.author.send(`Erreur num enigmes entre 0 et ${enigmesMap.size}`);
         else if (enigmesMap.get(num_enigme).answers.indexOf(msgTab[1]) > -1) { // Vérifie si la réponse est conforme au numéro de la question
-            message.author.send("Oui c'est ca");
-            message.author.send(enigmesMap.get(num_enigme).url);
+            // TODO: INSERT INTO TABLE COLLECTION
+            sendCard(message.author, enigmesMap.get(num_enigme));
+            sendPokedex(message.author, [1,2]);
         }   
         else
             message.author.send("Mauvaise réponse :(")
