@@ -1,4 +1,4 @@
-const Pokedex = require('../component/Pokedex');
+const Pokedex = require('../component/pokedex');
 
 
 module.exports = (interface, cardFoundIds) => {
