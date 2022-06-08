@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-const enigmes = require('../enigmes');
+const enigmes = require('./src/enigmes');
 
 const computeFields = (cardFoundIds) => {
     return enigmes.map((enigme) => {
