@@ -2,8 +2,8 @@ const Discord = require("discord.js");
 const { MessageActionRow, MessageButton, Intents } = require('discord.js');
 const config = require("./config.js");
 const enigmesTab = require("./enigmes");
-const sendCard = require("./useCase/sendCard");
-const sendPokedex = require("./useCase/sendPokedex.js");
+const sendCard = require("./usecase/sendCard.js");
+const sendPokedex = require("./usecase/sendPokedex.js");
 var bot = new Discord.Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.DIRECT_MESSAGES], partials: ['MESSAGE', 'CHANNEL', 'REACTION', "USER", "GUILD_MEMBER"]  });
 
 const enigmesMap = new Map(enigmesTab)
