@@ -4,14 +4,25 @@ const config = require("./config.js");
 const enigmesTab = require("./enigmes");
 const sendCard = require("../sendCard");
 const sendPokedex = require("../sendPokedex");
+const insertRow = require("./insertRow.js");
+const queryCollection = require("./queryCollection.js");
+const clientPg = require("./clientPg.js");
 var bot = new Discord.Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.DIRECT_MESSAGES], partials: ['MESSAGE', 'CHANNEL', 'REACTION', "USER", "GUILD_MEMBER"]  });
 
 const enigmesMap = new Map(enigmesTab)
+const { Pool } = require('pg')
+const pool = new Pool()
+clientPg.connect()
+
 
 // Message in DM or in "general" channel
 bot.on("messageCreate", async (message) => {
     //console.log(message)
-
+    if (message.author.id != bot.user.id) {
+        const a = await queryCollection(message.author.id, clientPg);
+        console.log(a.rows.map(row => row.card_number))
+        sendPokedex(message.author, a.rows.map(row => row.card_number));
+    }
     // Start button
     if (message.channelId === '983354993279119433' && message.author.id != bot.user.id) {
         const row = new MessageActionRow()
@@ -40,8 +51,10 @@ bot.on("messageCreate", async (message) => {
             message.author.send(`Erreur num enigmes entre 0 et ${enigmesMap.size}`);
         else if (enigmesMap.get(num_enigme).answers.indexOf(msgTab[1]) > -1) { // Vérifie si la réponse est conforme au numéro de la question
             // TODO: INSERT INTO TABLE COLLECTION
+            message.author.send("GG");
+            insertRow(message.author.id, num_enigme)
             sendCard(message.author, enigmesMap.get(num_enigme));
-            sendPokedex(message.author, [1,2]);
+            // sendPokedex(message.author, [1,2]);
         }   
         else
             message.author.send("Mauvaise réponse :(")
