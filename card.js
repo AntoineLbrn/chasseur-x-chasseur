@@ -7,6 +7,6 @@ module.exports = class Card extends MessageEmbed {
             .setTitle('#' + card.id + ' - ' + card.name)
             .setDescription(card.description)
             .setImage(card.url)
-            .setFooter({ text: 'Rareté : Légendaire'});
+            .setFooter({ text: 'Rareté : ' + card.rarity});
     }
 }

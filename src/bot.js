@@ -27,16 +27,16 @@ bot.on("messageCreate", async (message) => {
                 .setLabel('Clique sur moi !')
                 .setStyle('PRIMARY'),
         );
-        message.channel.send({content: 'Appuie', components: [row]});
+        message.channel.send({content: 'Pour commencer le jeu, appuie sur ce bouton !', components: [row]});
     }
 
     // Pokedex
     if (message.author.id != bot.user.id && message.guildId === null && message.content === "pokedex") {
         queryCollection(message.author.id, clientPg).then((res => {
-            console.log(res)
+            //console.log(res)
             sendPokedex(message.author, res.map(row => row.card_number));
         })).catch((error) => {
-            message.author.send("Une erreur inconnue s'est produite. Va voir un·e anim. stv. ou réessaie.")
+            message.author.send("Une erreur inconnue s'est produite, ressaye !")
         });
         return
     }
@@ -45,42 +45,37 @@ bot.on("messageCreate", async (message) => {
     if (message.guildId === null && message.author != bot.user && message.content != "pokedex" ) {
         const msgTab= message.content.split(" ")
         if (msgTab.length != 2) {
-            message.author.send('Pas dans la forme  "question réponse"')
+            message.author.send('Je n\'ai pas bien compris, ton message n\'est pas sous la forme "n°question réponse".')
             return;
         }
 
         const num_enigme = parseInt(msgTab[0])
     
         if (isNaN(num_enigme))                                      // Pour filtrer si ce n'est pas un nombre entier
-            message.author.send("Erreur num enigmes pas chiffre");
-        else if (num_enigme > enigmesMap.size || num_enigme < 0)    // Pour filtrer si ce n'est pas un n° valide de question
-            message.author.send(`Erreur num enigmes entre 0 et ${enigmesMap.size}`);
+            message.author.send("Je n\'ai pas bien compris, le numéro de l'énigme n'est pas un nombre.");
+        else if (num_enigme > enigmesMap.size || num_enigme <= 0)    // Pour filtrer si ce n'est pas un n° valide de question
+            message.author.send(`Je n\'ai pas bien compris, le numéro de l'énigme n'est pas entre 1 et ${enigmesMap.size}.`);
         else if (enigmesMap.get(num_enigme).answers.indexOf(msgTab[1].toUpperCase()) > -1) { // Vérifie si la réponse est conforme au numéro de la question
-            // TODO: INSERT INTO TABLE COLLECTION
             insertRow(message.author.id, num_enigme).then((res => {
-                message.author.send("GG");
+                message.author.send("C'est ca ! Tu as obtenu ce personnage :");
                 sendCard(message.author, enigmesMap.get(num_enigme));
             })).catch((error) => {
                 if (error.constraint === "collection_pkey") {
                     message.author.send(CUSTOM_ERROR.CARD_ALREADY_ACQUIRED);
                 }
             });
-            // sendCard(message.author, enigmesMap.get(num_enigme));
-            // sendPokedex(message.author, [1,2]);
         }   
         else
-            message.author.send("Mauvaise réponse :(")
+            message.author.send("Malheureusement ce n'est pas la bonne réponse... :'(")
     }
-
-    
 });
+
 
 // Button interaction to send DM at the user
 bot.on('interactionCreate', interaction => {
 	if (!interaction.isButton()) return;
     if (!interaction.customId==="start_dm") return;
-	interaction.user.send("test")
-    interaction.reply("Merci !")
+	interaction.user.send("C'est ici que tout va se passer !")
 });
 
 bot.login(config.BOT_TOKEN);
