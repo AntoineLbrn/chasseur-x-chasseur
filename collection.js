@@ -4,7 +4,7 @@ const enigmes = require('./src/enigmes');
 const computeFields = (cardFoundIds, pageNumber) => {
     return enigmes.slice(pageNumber*25).map((enigme) => {
         return {
-            name: '#' + enigme[1].id,  value: cardFoundIds.includes(enigme[1].id) ? '✅' : '❌', inline: true
+            name: '#' + enigme[1].id + " " + enigme[1].name,  value: cardFoundIds.includes(enigme[1].id) ? '✅' : '❌', inline: true
         }
     })
 }
