@@ -57,7 +57,7 @@ bot.on("messageCreate", async (message) => {
             message.author.send(`Je n\'ai pas bien compris, le numéro de l'énigme n'est pas entre 1 et ${enigmesMap.size}.`);
         else if (enigmesMap.get(num_enigme).answers.indexOf(msgTab[1].toUpperCase()) > -1) { // Vérifie si la réponse est conforme au numéro de la question
             insertRow(message.author.id, num_enigme).then((res => {
-                message.author.send("C'est ça ! Tu as obtenu ce personnage :");
+                message.author.send("C'est ça ! Tu as obtenu :");
                 sendCard(message.author, enigmesMap.get(num_enigme));
             })).catch((error) => {
                 if (error.constraint === "collection_pkey") {
