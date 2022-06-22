@@ -12,7 +12,7 @@ const computeFields = (cardFoundIds, pageNumber) => {
 /**
  * There are two pages : 0 and 1
  */
-module.exports = class Pokedex extends MessageEmbed {
+module.exports = class Collection extends MessageEmbed {
     constructor(cardFoundIds, pageNumber) {
         const fields = computeFields(cardFoundIds, pageNumber);
         return super()

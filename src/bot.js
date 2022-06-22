@@ -3,7 +3,7 @@ const { MessageActionRow, MessageButton, Intents } = require('discord.js');
 const config = require("./config.js");
 const enigmesTab = require("./enigmes");
 const sendCard = require("../sendCard");
-const sendPokedex = require("../sendPokedex");
+const sendCollection = require("../sendCollection");
 const insertRow = require("./insertRow.js");
 const queryCollection = require("./queryCollection.js");
 const clientPg = require("./clientPg.js");
@@ -30,11 +30,11 @@ bot.on("messageCreate", async (message) => {
         message.channel.send({content: 'Pour commencer le jeu, appuie sur ce bouton !', components: [row]});
     }
 
-    // Pokedex
-    if (message.author.id != bot.user.id && message.guildId === null && message.content === "pokedex") {
+    // Collection
+    if (message.author.id != bot.user.id && message.guildId === null && message.content.toUpperCase() === "COLLECTION") {
         queryCollection(message.author.id, clientPg).then((res => {
             //console.log(res)
-            sendPokedex(message.author, res.map(row => row.card_number));
+            sendCollection(message.author, res.map(row => row.card_number));
         })).catch((error) => {
             message.author.send("Une erreur inconnue s'est produite, ressaye !")
         });
@@ -42,7 +42,7 @@ bot.on("messageCreate", async (message) => {
     }
     
     // Answer via DM, parses string of the message to identify the n° of the question and the answer
-    if (message.guildId === null && message.author != bot.user && message.content != "pokedex" ) {
+    if (message.guildId === null && message.author != bot.user && message.content.toUpperCase() != "COLLECTION" ) {
         const msgTab= message.content.split(" ")
         if (msgTab.length != 2) {
             message.author.send('Je n\'ai pas bien compris, ton message n\'est pas sous la forme "n°question réponse".')
@@ -57,7 +57,7 @@ bot.on("messageCreate", async (message) => {
             message.author.send(`Je n\'ai pas bien compris, le numéro de l'énigme n'est pas entre 1 et ${enigmesMap.size}.`);
         else if (enigmesMap.get(num_enigme).answers.indexOf(msgTab[1].toUpperCase()) > -1) { // Vérifie si la réponse est conforme au numéro de la question
             insertRow(message.author.id, num_enigme).then((res => {
-                message.author.send("C'est ca ! Tu as obtenu ce personnage :");
+                message.author.send("C'est ça ! Tu as obtenu ce personnage :");
                 sendCard(message.author, enigmesMap.get(num_enigme));
             })).catch((error) => {
                 if (error.constraint === "collection_pkey") {
