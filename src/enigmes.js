@@ -27,7 +27,9 @@ module.exports = [
 //      10 énigmes de chaque catégorie
 // 1 Intro
 // 2-10 Culture Manga
-// 11-20 Culture Jap (narutomaki, sakura, jankenpon=klk)
-// 21-30 Culture Pokemon (pikachu, mimikyu, fouinard)
-// 31-40 Culture Enigmes (morse = PNL x 3 voeux jamais terre, )
-// 41-50 Anim 
+// 11-20 Culture Jap (narutomaki, sakura, jankenpon=klk, kirigami klk, KFC shokugeki, hokusai grande vague blue period, ukiyo-e blue period) 7
+// 21-30 Culture Pokemon (pikachu, mimikyu, germignon, lugia, wattouat, fouinar, fantominus, rondoudou, voltali, salamèche)
+// 31-40 Culture Enigmes (morse = PNL x 3 voeux jamais terre, lettre miroir x3, code césar x3 ) 9
+// 41-50 Anim
+
+// 6 manga en plus (Miyazaki x2, OP )
