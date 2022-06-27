@@ -9,17 +9,18 @@ module.exports = [
     [8, {question: 'Quel est le nom de code de Loid Forger dans Spy x Family ?', answers: ["TWILIGHT"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1655929519/Loid_Forger_Colored_Full_Body_x1oqa6.webp", id: 8, name: 'Twilight', description: "Personnage de SxF", rarity: "Commune"}],
     [9, {question: 'Combien y a-t-il de Titans Primordiaux dans L\'Attaque des Titans ?', answers: ["9", "NEUF"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1655927651/Eren-Yeager-PNG-Image_nleieg.png", id: 9, name: 'Eren', description: "Personnage de SNK", rarity: "Rare"}],
     [10, {question: 'Quel animateur japonais est célèbre pour avoir animé les scènes d\'action de Levi dans L\'Attaque des Titans ?', answers: ["IMAIARIFUMI", "ARIFUMIIMAI"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1655921231/Captain-Levi-Ackerman-PNG-Transparent-Image_xbros8.png", id: 10, name: 'Levi', description: "Personnage de SNK", rarity: "Épique"}],
-    [11, {question: '', answers: [""],  url: "", id: 11, name: '', description: "", rarity: ""}],
-    [12, {question: '', answers: [""],  url: "", id: 12, name: '', description: "", rarity: ""}],
-    [13, {question: '', answers: [""],  url: "", id: 13, name: '', description: "", rarity: ""}],
-    [14, {question: '', answers: [""],  url: "", id: 14, name: '', description: "", rarity: ""}],
-    [15, {question: '', answers: [""],  url: "", id: 15, name: '', description: "", rarity: ""}],
-    [16, {question: '', answers: [""],  url: "", id: 16, name: '', description: "", rarity: ""}],
-    [17, {question: '', answers: [""],  url: "", id: 17, name: '', description: "", rarity: ""}],
-    [18, {question: '', answers: [""],  url: "", id: 18, name: '', description: "", rarity: ""}],
-    [19, {question: '', answers: [""],  url: "", id: 19, name: '', description: "", rarity: ""}],
-    [20, {question: '', answers: [""],  url: "", id: 20, name: '', description: "", rarity: ""}],
-    [21, {question: '', answers: [""],  url: "", id: 21, name: '', description: "", rarity: ""}]
+    
+    [11, {question: 'Comment s\'appelle la décoration culinaire japonaise à base de poisson et avec une spirale rose ?', answers: ["NARUTOMAKI"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656355303/11-20/Naruto-Shippuden-PNG-Free-Download_nkljj7.png", id: 11, name: 'Naruto', description: "Personnage de Naruto", rarity: "Commune"}],
+    [12, {question: 'Comment dit on "cerisier" en japonais ?', answers: ["SAKURA"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656355647/11-20/73-732685_sakura-4-naruto-shippuden-sakura-png_kniumq.png", id: 12, name: 'Sakura', description: "Personnage de Naruto", rarity: "Commune"}],
+    [13, {question: 'Comment s\'appelle le jeu pierre-feuille-ciseaux au Japon ?', answers: ["JANKENPON"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656355748/11-20/Ryuko-Matoi-PNG-HD_gsh0oz.png", id: 13, name: 'Ryuko', description: "Personnage de KLK", rarity: "Rare"}],
+    [14, {question: 'Quel est le nom de l\'art du découpage du papier dans la culture japonaise ?', answers: ["KIRIGAMI"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656356118/11-20/c0a6fda4ac637c8c61d9ee568ab6e1c3_sebnim.png", id: 14, name: 'Mako', description: "Personnage de KLK", rarity: "Rare"}],
+    [15, {question: 'Quel est le plat traditionel de Noël au Japon ?', answers: ["KFC"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656356422/11-20/a5ed2270b64d13210ba34b4233d3aa78_gsguh3.jpg", id: 15, name: 'Itachi et sa poule', description: "Itachi et sa poule", rarity: "Épique"}],
+    [16, {question: 'Quel artiste japonais a peint "La Grande Vague de Kanagawa" ?', answers: ["HOKUSAI", "KATSUSHIKAHOKUSAI"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656356590/11-20/image_2022-05-12_031619872-819x1024_fyexkf.png", id: 16, name: 'Yaguchi', description: "Personnage de Blue Period", rarity: "Rare"}],
+    [17, {question: 'Comment s\'appelle le mouvement artistique japonais qui consiste à graver des estampes sur du bois ?', answers: ["UKIYO-E", "UKIYOE", "UKIYO"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656357981/11-20/Kuwana.Maki.full.3611735_kyyqya.png", id: 17, name: 'Maki', description: "Personnage de Blue Period", rarity: "Épique"}],
+    [18, {question: 'En quelle année est sortie le premier film du studio Ghibli ?', answers: ["1986"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656358343/11-20/My-Neighbor-Totoro-Transparent-Background_cmuxlw.png", id: 18, name: 'Totoro', description: "Personnage du Studio Ghibli", rarity: "Commune"}],
+    [19, {question: 'Dans One Piece, comment s\'appellent les fruits du démon qui permettent à son utilisateur de prendre la forme d\'un élément naturel ?', answers: ["LOGIA"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656358593/11-20/q7LDgDk_e8juay.png", id: 19, name: 'Law', description: "Personnage de OP", rarity: "Commune"}],
+    [20, {question: 'Quel est le nom de l\'île natale de Luffy, le personnage de One Piece ?', answers: ["DAWN"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656358687/11-20/Luffy-PNG-Photos_xqt30h.png", id: 20, name: 'Luffy', description: "Personnage de OP", rarity: "Commune"}],
+    [21, {question: '', answers: [""],  url: "", id: 21, name: '', description: "Personnage de", rarity: ""}]
 ]   
 
 // 50 énigmes
@@ -27,9 +28,9 @@ module.exports = [
 //      10 énigmes de chaque catégorie
 // 1 Intro
 // 2-10 Culture Manga
-// 11-20 Culture Jap (narutomaki, sakura, jankenpon=klk, kirigami klk, KFC shokugeki, hokusai grande vague blue period, ukiyo-e blue period) 7
-// 21-30 Culture Pokemon (pikachu, mimikyu, germignon, lugia, wattouat, fouinar, fantominus, rondoudou, voltali, salamèche)
+// 11-20 Culture Jap
+// 21-30 Culture Pokemon (pikachu, mimikyu, germignon, lugia, wattouat, fouinar, fantominus, rondoudou, voltali, salamèche) + peinture hokusai
 // 31-40 Culture Enigmes (morse = PNL x 3 voeux jamais terre, lettre miroir x3, code césar x3 ) 9
 // 41-50 Anim
 
-// 6 manga en plus (Miyazaki x2, OP )
+// manga en plus (Miyazaki x2, OP)
