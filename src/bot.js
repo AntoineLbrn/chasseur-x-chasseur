@@ -76,6 +76,7 @@ bot.on('interactionCreate', interaction => {
     interaction.deferUpdate();
 	if (!interaction.isButton()) return;
     if (!interaction.customId==="start_dm") return;
+    interaction.deferUpdate();
 	interaction.user.send("C'est ici que tout va se passer !")
 });
 
