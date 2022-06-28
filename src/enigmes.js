@@ -21,16 +21,16 @@ module.exports = [
     [19, {question: 'Dans One Piece, comment s\'appellent les fruits du démon qui permettent à son utilisateur de prendre la forme d\'un élément naturel ?', answers: ["LOGIA"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656358593/11-20/q7LDgDk_e8juay.png", id: 19, name: 'Law', description: "Personnage de OP", rarity: "Commune"}],
     [20, {question: 'Quel est le nom de l\'île natale de Luffy, le personnage de One Piece ?', answers: ["DAWN"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656358687/11-20/Luffy-PNG-Photos_xqt30h.png", id: 20, name: 'Luffy', description: "Personnage de OP", rarity: "Commune"}],
     
-    [21, {question: 'Who\'s that Pokemon ?', answers: [""],  url: "", id: 21, name: '', description: "", rarity: ""}],
-    [22, {question: 'Who\'s that Pokemon ?', answers: [""],  url: "", id: 22, name: '', description: "", rarity: ""}],
-    [23, {question: 'Who\'s that Pokemon ?', answers: [""],  url: "", id: 23, name: '', description: "", rarity: ""}],
-    [24, {question: 'Who\'s that Pokemon ?', answers: [""],  url: "", id: 24, name: '', description: "", rarity: ""}],
+    [21, {question: 'Who\'s that Pokemon ?', answers: ["MIMIQUI", "MIMIKYU"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656369481/21-30/1200px-Mimiqui__Forme_D%C3%A9guis%C3%A9e_-SL_pakx0h.png", id: 21, name: 'Mimiqui', description: "Pokemon", rarity: "Épique"}],
+    [22, {question: 'Who\'s that Pokemon ?', answers: ["GERMIGNON", "CHIKORITA"],  url: "", id: 22, name: 'Germignon', description: "Pokemon", rarity: "Commune"}],
+    [23, {question: 'Who\'s that Pokemon ?', answers: ["FOUINAR", "FURRET"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656369482/21-30/1200px-Fouinar-HGSS_rqhga2.png", id: 23, name: 'Fouinar', description: "Pokemon", rarity: "Rare"}],
+    [24, {question: 'Who\'s that Pokemon ?', answers: ["SALAMÈCHE", "SALAMECHE", "CHARMANDER"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656369481/21-30/Salam%C3%A8che-RFVF_djpunz.png", id: 24, name: 'Salamèche', description: "Pokemon", rarity: "Commune"}],
     [25, {question: '', answers: [""],  url: "", id: 25, name: '', description: "Personnage de", rarity: ""}],
     [26, {question: '', answers: [""],  url: "", id: 26, name: '', description: "Personnage de", rarity: ""}],
     [27, {question: '', answers: [""],  url: "", id: 27, name: '', description: "Personnage de", rarity: ""}],
     [28, {question: '', answers: [""],  url: "", id: 28, name: '', description: "Personnage de", rarity: ""}],
     [29, {question: '', answers: [""],  url: "", id: 29, name: '', description: "Personnage de", rarity: ""}],
-    [30, {question: '', answers: [""],  url: "", id: 30, name: '', description: "Personnage de", rarity: ""}],
+    [30, {question: '', answers: [""],  url: "", id: 30, name: '', description: "Personnage de", rarity: ""}], // 3 rare, 1 epique
 
     [31, {question: '', answers: [""],  url: "", id: 31, name: '', description: "Personnage de", rarity: ""}]
 ]   
@@ -42,8 +42,9 @@ module.exports = [
 // 2-10 Culture Manga
 // 11-20 Culture Jap
 
-// 21-30 Silhouettes (mimikyu, germignon, fouinar, salameche) + peinture hokusai dans images
+// 21-30 Silhouettes
 // 31-40 Culture Enigmes (morse = PNL x 3 voeux jamais terre, lettre miroir x3, code césar x3 ) 9
 // 41-50 Anim (tournoi ninja, cache cache, PFC ++, morpion ++)
 
 // Manga en plus (FMAB ed, dr stone, L, megumin, demon slayer rangyoku, haikyuu (https://www.youtube.com/watch?v=Q5JMw1UaofY))
+// Images sur cartes pokemon et peintures hokusai
