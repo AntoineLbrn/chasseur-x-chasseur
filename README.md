@@ -8,4 +8,3 @@ https://discord.com/developers/applications/<br />
 [Liste des énigmes à imprimer](https://docs.google.com/document/d/1Zma4H0RLV6qbDuAwhK8VToWnBiZuRSAm4hlpf9Xas4o/edit?usp=sharing)<br />
 
 # Règles
-Le but du jeu est de trouver le plus de cartes sur lesquelles seront inscrites des petites énigmes

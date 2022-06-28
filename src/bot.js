@@ -73,6 +73,7 @@ bot.on("messageCreate", async (message) => {
 
 // Button interaction to send DM at the user
 bot.on('interactionCreate', interaction => {
+    interaction.deferUpdate();
 	if (!interaction.isButton()) return;
     if (!interaction.customId==="start_dm") return;
 	interaction.user.send("C'est ici que tout va se passer !")

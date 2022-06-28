@@ -15,12 +15,24 @@ module.exports = [
     [13, {question: 'Comment s\'appelle le jeu pierre-feuille-ciseaux au Japon ?', answers: ["JANKENPON"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656355748/11-20/Ryuko-Matoi-PNG-HD_gsh0oz.png", id: 13, name: 'Ryuko', description: "Personnage de KLK", rarity: "Rare"}],
     [14, {question: 'Quel est le nom de l\'art du découpage du papier dans la culture japonaise ?', answers: ["KIRIGAMI"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656356118/11-20/c0a6fda4ac637c8c61d9ee568ab6e1c3_sebnim.png", id: 14, name: 'Mako', description: "Personnage de KLK", rarity: "Rare"}],
     [15, {question: 'Quel est le plat traditionel de Noël au Japon ?', answers: ["KFC"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656356422/11-20/a5ed2270b64d13210ba34b4233d3aa78_gsguh3.jpg", id: 15, name: 'Itachi et sa poule', description: "Itachi et sa poule", rarity: "Épique"}],
-    [16, {question: 'Quel artiste japonais a peint "La Grande Vague de Kanagawa" ?', answers: ["HOKUSAI", "KATSUSHIKAHOKUSAI"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656356590/11-20/image_2022-05-12_031619872-819x1024_fyexkf.png", id: 16, name: 'Yaguchi', description: "Personnage de Blue Period", rarity: "Rare"}],
+    [16, {question: 'Quel artiste japonais a peint ce tableau ? ("La Grande Vague de Kanagawa")', answers: ["HOKUSAI", "KATSUSHIKAHOKUSAI"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656356590/11-20/image_2022-05-12_031619872-819x1024_fyexkf.png", id: 16, name: 'Yaguchi', description: "Personnage de Blue Period", rarity: "Rare"}],
     [17, {question: 'Comment s\'appelle le mouvement artistique japonais qui consiste à graver des estampes sur du bois ?', answers: ["UKIYO-E", "UKIYOE", "UKIYO"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656357981/11-20/Kuwana.Maki.full.3611735_kyyqya.png", id: 17, name: 'Maki', description: "Personnage de Blue Period", rarity: "Épique"}],
     [18, {question: 'En quelle année est sortie le premier film du studio Ghibli ?', answers: ["1986"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656358343/11-20/My-Neighbor-Totoro-Transparent-Background_cmuxlw.png", id: 18, name: 'Totoro', description: "Personnage du Studio Ghibli", rarity: "Commune"}],
     [19, {question: 'Dans One Piece, comment s\'appellent les fruits du démon qui permettent à son utilisateur de prendre la forme d\'un élément naturel ?', answers: ["LOGIA"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656358593/11-20/q7LDgDk_e8juay.png", id: 19, name: 'Law', description: "Personnage de OP", rarity: "Commune"}],
     [20, {question: 'Quel est le nom de l\'île natale de Luffy, le personnage de One Piece ?', answers: ["DAWN"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656358687/11-20/Luffy-PNG-Photos_xqt30h.png", id: 20, name: 'Luffy', description: "Personnage de OP", rarity: "Commune"}],
-    [21, {question: '', answers: [""],  url: "", id: 21, name: '', description: "Personnage de", rarity: ""}]
+    
+    [21, {question: 'Who\'s that Pokemon ?', answers: [""],  url: "", id: 21, name: '', description: "", rarity: ""}],
+    [22, {question: 'Who\'s that Pokemon ?', answers: [""],  url: "", id: 22, name: '', description: "", rarity: ""}],
+    [23, {question: 'Who\'s that Pokemon ?', answers: [""],  url: "", id: 23, name: '', description: "", rarity: ""}],
+    [24, {question: 'Who\'s that Pokemon ?', answers: [""],  url: "", id: 24, name: '', description: "", rarity: ""}],
+    [25, {question: '', answers: [""],  url: "", id: 25, name: '', description: "Personnage de", rarity: ""}],
+    [26, {question: '', answers: [""],  url: "", id: 26, name: '', description: "Personnage de", rarity: ""}],
+    [27, {question: '', answers: [""],  url: "", id: 27, name: '', description: "Personnage de", rarity: ""}],
+    [28, {question: '', answers: [""],  url: "", id: 28, name: '', description: "Personnage de", rarity: ""}],
+    [29, {question: '', answers: [""],  url: "", id: 29, name: '', description: "Personnage de", rarity: ""}],
+    [30, {question: '', answers: [""],  url: "", id: 30, name: '', description: "Personnage de", rarity: ""}],
+
+    [31, {question: '', answers: [""],  url: "", id: 31, name: '', description: "Personnage de", rarity: ""}]
 ]   
 
 // 50 énigmes
@@ -29,8 +41,9 @@ module.exports = [
 // 1 Intro
 // 2-10 Culture Manga
 // 11-20 Culture Jap
-// 21-30 Culture Pokemon (pikachu, mimikyu, germignon, lugia, wattouat, fouinar, fantominus, rondoudou, voltali, salamèche) + peinture hokusai
-// 31-40 Culture Enigmes (morse = PNL x 3 voeux jamais terre, lettre miroir x3, code césar x3 ) 9
-// 41-50 Anim
 
-// manga en plus (Miyazaki x2, OP)
+// 21-30 Silhouettes (mimikyu, germignon, fouinar, salameche) + peinture hokusai dans images
+// 31-40 Culture Enigmes (morse = PNL x 3 voeux jamais terre, lettre miroir x3, code césar x3 ) 9
+// 41-50 Anim (tournoi ninja, cache cache, PFC ++, morpion ++)
+
+// Manga en plus (FMAB ed, dr stone, L, megumin, demon slayer rangyoku, haikyuu (https://www.youtube.com/watch?v=Q5JMw1UaofY))
