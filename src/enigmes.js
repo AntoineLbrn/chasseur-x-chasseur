@@ -35,13 +35,13 @@ module.exports = [
     [31, {question: 'Décodez ce message :', answers: ["VOEUX"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656456853/31-40/Emma_Anime_ctwqb1.webp", id: 31, name: 'Emma', description: "Personnage de Promised Neverland", rarity: "Épique"}],
     [32, {question: 'Décodez ce message :', answers: ["JAMAIS"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656456853/31-40/Norman_Anime_r2z2dw.webp", id: 32, name: 'Norman', description: "Personnage de Promised Neverland", rarity: "Commune"}],
     [33, {question: 'Décodez ce message :', answers: ["TERRE"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656456854/31-40/ray-1_zh1khr.png", id: 33, name: 'Ray', description: "Personnage de Promised Neverland", rarity: "Commune"}],
-    [34, {question: 'Décodez ce message :', answers: [""],  url: "", id: 34, name: '', description: "Personnage de", rarity: ""}],
-    [35, {question: 'Décodez ce message :', answers: [""],  url: "", id: 35, name: '', description: "Personnage de", rarity: ""}],
-    [36, {question: 'Décodez ce message :', answers: [""],  url: "", id: 36, name: '', description: "Personnage de", rarity: ""}],
-    [37, {question: 'Décodez ce message :', answers: [""],  url: "", id: 37, name: '', description: "Personnage de", rarity: ""}],
-    [38, {question: 'Décodez ce message :', answers: [""],  url: "", id: 38, name: '', description: "Personnage de", rarity: ""}],
-    [39, {question: 'Décodez ce message :', answers: [""],  url: "", id: 39, name: '', description: "Personnage de", rarity: ""}],
-    [40, {question: '', answers: [""],  url: "", id: 40, name: '', description: "Personnage de", rarity: ""}], // 3 rare, 1 epique, manga en plus ?
+    [34, {question: 'Décodez ce code césar de 5 :', answers: ["LUNE"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656514685/31-40/Capture_mprldh.png", id: 34, name: 'Kaguya', description: "Personnage de Kaguya Sama: Love is war", rarity: "Commune"}],
+    [35, {question: 'Décodez ce code césar de 5 :', answers: ["ARGENT"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656514740/31-40/shirogane_miyuki_17945_vydkmj.jpg", id: 35, name: 'Shirogane', description: "Personnage de Kaguya Sama: Love is war", rarity: "Commune"}],
+    [36, {question: 'Décodez ce code césar de 5 :', answers: ["POULET"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656514782/31-40/EvkxJWwXIAEbbZb_v64h0s.jpg", id: 36, name: 'Fujiwara', description: "Personnage de Kaguya Sama: Love is war", rarity: "Rare"}],
+    [37, {question: 'Décodez ce message :', answers: ["LETTRE"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656515544/31-40/conan_fg3b2w.png", id: 37, name: 'Conan', description: "Personnage de Detective Conan", rarity: "Commune"}],
+    [38, {question: 'Décodez ce message :', answers: ["VOYAGE"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656516726/31-40/Hinazuki.Kayo.full.1977538_s7iykd.jpg", id: 38, name: 'Kayo', description: "Personnage de Erased", rarity: "Rare"}],
+    [39, {question: 'Décodez ce message :', answers: ["INDICE"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656517109/31-40/b4aceb004b1e02534a924b393260fad4ab57fd65v2_00_alq3z7.jpg", id: 39, name: 'Kaori', description: "Personnage de Your Lie in April", rarity: "Épique"}],
+    [40, {question: 'Décodez ce message :', answers: ["PIANO"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656517674/31-40/Kosei_Arima_Infobox_wmipbz.webp", id: 40, name: 'Kosei', description: "Personnage de Your Lie in April", rarity: "Commune"}],
     
     [41, {question: '', answers: [""],  url: "", id: 41, name: '', description: "Personnage de", rarity: ""}],
 ]   
