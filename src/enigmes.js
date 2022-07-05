@@ -43,7 +43,16 @@ module.exports = [
     [39, {question: 'Décodez ce message :', answers: ["INDICE"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656517109/31-40/b4aceb004b1e02534a924b393260fad4ab57fd65v2_00_alq3z7.jpg", id: 39, name: 'Kaori', description: "Personnage de Your Lie in April", rarity: "Rare"}],
     [40, {question: 'Décodez ce message :', answers: ["PIANO"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1656517674/31-40/Kosei_Arima_Infobox_wmipbz.webp", id: 40, name: 'Kosei', description: "Personnage de Your Lie in April", rarity: "Commune"}],
     
-    [41, {question: '', answers: [""],  url: "", id: 41, name: '', description: "Personnage de", rarity: ""}],
+    [41, {question: '', answers: ["SOLEIL"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657012679/41-50/20220705_092456_y62ste.jpg", id: 41, name: 'Mérida', description: "", rarity: "Légendaire"}],
+    [42, {question: '', answers: ["FRAISE"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657012679/41-50/20220705_092758_hzmxo1.jpg", id: 42, name: 'Naf', description: "", rarity: "Légendaire"}],
+    [43, {question: '', answers: ["PRISE"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657012678/41-50/20220705_092007_v8k8b7.jpg", id: 43, name: 'Gao', description: "", rarity: "Légendaire"}],
+    [44, {question: '', answers: ["LAMPE"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657012677/41-50/20220705_104546_lqlfn9.jpg", id: 44, name: 'Sparky', description: "", rarity: "Légendaire"}],
+    [45, {question: '', answers: ["VIOLON"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657012677/41-50/BD38F9E3-95C3-4B1E-93A0-D34D0A767811_r0gk2h.jpg", id: 45, name: 'Lys', description: "", rarity: "Légendaire"}],
+    [46, {question: '', answers: ["EXPLOSION"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657012676/41-50/20220705_091946_cwe4cn.jpg", id: 46, name: 'HanaKo', description: "", rarity: "Légendaire"}],
+    [47, {question: '', answers: ["BLEU"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657012676/41-50/20220705_092725_sejfkr.jpg", id: 47, name: 'Alex', description: "", rarity: "Légendaire"}],
+    [48, {question: '', answers: ["CHANSON"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657012676/41-50/20220705_092001_m2ol7e.jpg", id: 48, name: 'Maoui', description: "", rarity: "Légendaire"}],
+    [49, {question: '', answers: ["NOVEMBRE"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657012676/41-50/20220705_091924_ea1gos.jpg", id: 49, name: 'Hseyil', description: "", rarity: "Légendaire"}],
+    [50, {question: '', answers: ["PLASTIQUE"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657012676/41-50/20220705_110648_q5z3ie.jpg", id: 50, name: 'Flo', description: "", rarity: "Légendaire"}]
 ]   
 
 // 50 énigmes
