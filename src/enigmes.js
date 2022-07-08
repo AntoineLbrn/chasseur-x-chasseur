@@ -67,8 +67,8 @@ module.exports = [
     [45, {question: '', answers: ["VIOLON"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657182940/41-50%20Blois%202022/Capture_xkgteq.png", id: 45, name: 'Kirby', description: "", rarity: "Légendaire"}],
     [46, {question: '', answers: ["EXPLOSION"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657183220/41-50%20Blois%202022/129652682_1035963410204446_5440253162394647287_n_gbtnpi.jpg", id: 46, name: 'Toinou', description: "", rarity: "Légendaire"}],
     [47, {question: '', answers: ["BLEU"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657183285/41-50%20Blois%202022/655fb0c5c9e5661e2d04bf7975dfb222_ybxkic.jpg", id: 47, name: 'Neige', description: "", rarity: "Légendaire"}],
-    [48, {question: '', answers: ["CHANSON"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657183487/41-50%20Blois%202022/chateauroyaldeblois-4creditmarinlafleche_exeg8v.jpg", id: 48, name: 'Château de Blois', description: "", rarity: "Légendaire"}],
-    [49, {question: '', answers: ["NOVEMBRE"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657183635/41-50%20Blois%202022/_MG_4421.JPG_vfhsog.jpg", id: 49, name: 'Aelita', description: "", rarity: "Légendaire"}],
+    [48, {question: '', answers: ["CHANSON"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657288794/41-50%20Blois%202022/AA504587-675E-4F41-AD25-3BE5FBEAF1A6_ukhjkp.jpg", id: 48, name: 'Eliott', description: "", rarity: "Légendaire"}],
+    [49, {question: '', answers: ["NOVEMBRE"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657288835/41-50%20Blois%202022/oh_jcmp6s.jpg", id: 49, name: 'Aelita', description: "", rarity: "Légendaire"}],
     [50, {question: '', answers: ["PLASTIQUE"],  url: "https://res.cloudinary.com/dbhr3yfi5/image/upload/v1657183430/41-50%20Blois%202022/cuillere-a-dessert-en-inox_1319731_qi45s2.jpg", id: 50, name: 'Spoon', description: "", rarity: "Légendaire"}]
 ]   
 
